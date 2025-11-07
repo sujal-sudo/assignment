@@ -279,15 +279,18 @@ void main() {
   var chk = ChkAcc('A923', 'Aayush', 500.0);
   var prem = PremAcc('P456', 'Ankit', 15000.0);
   var stu = StuAcc('ST423', 'Probs', 2000.0);
+  var sav2 = SavAcc('S234', 'Nupuana', 500.0);
 
   bank.create(sav);
   bank.create(chk);
   bank.create(prem);
   bank.create(stu);
+  bank.create(sav2);
 
   bank.report();
   bank.applyInterest();
   bank.transfer('S123', 'P456', 200.0);
+  bank.transfer('S234', 'ST423', 100.0);
 
   sav.showHistory();
   prem.showHistory();
