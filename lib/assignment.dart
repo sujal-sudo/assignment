@@ -272,7 +272,6 @@ class Bank {
   }
 }
 
-// Main Program
 void main() {
   var bank = Bank();
 
